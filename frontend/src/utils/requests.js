@@ -63,7 +63,7 @@ const reqGet = async (url, params = {}, headers = false) => {
     const response = await axios.get(url, { params, headers });
     return response;
   } catch (error) {
-    return false;
+    return error;
   }
 };
 
